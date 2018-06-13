@@ -22,7 +22,7 @@
 				var str, i, j, k, l, m = "";
 				str += $('#photo').append("<img src='" + resume.photo.img + "' alt='my photo'></div>");
 
-				str += $('#personal').append("<h2 class='title'>" + resume.title.personal + "</h2>");
+				str += $('#name').before("<h2 class='title'>" + resume.title.personal + "</h2>");
 
 				str += $('#name').append("<span class='title'>" + resume.title.name + "</span>");
 				str += $('#name').append("<span class='box'>" + resume.name.kr + "</span>");
