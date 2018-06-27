@@ -13,8 +13,83 @@
         "military": "병역",
         "overseasstudy": "연수",
         "certificate": "자격증",
-        "announce": "발표"
+        "publications": "발표"
     },
+    "basics": {
+        "name": "nam hyubsoo",
+        "label": "markup enginner",
+        "picture": "insta.jpg",
+        "email": "minamiland@gmail.com",
+        "phone": "(82) 010-2786-3218",
+        "website": "https://may5.net",
+        "summary": "",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Seoul",
+            "countryCode": "kr",
+            "region": "Korea"
+        },
+        "profiles": [
+            {
+                "network": "Twitter",
+                "username": "minamiland",
+                "url": ""
+            },
+            {
+                "network": "Facebook",
+                "username": "minamiland",
+                "url": ""
+            },
+            {
+                "network": "instagram",
+                "username": "minamiland",
+                "url": ""
+            }
+        ]
+    },
+    "language": [
+        {
+            "language": "Korean",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Japanes",
+            "fluency": "Business speaker"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Markup Enginner",
+            "level": "Master",
+            "keywords": [
+                "HTML", "CSS", "SCSS", "LESS"
+            ]
+        }
+    ],
+    "work": [
+        {
+            "company": "",
+            "position": "",
+            "website": "",
+            "startDate": "",
+            "endDate": "",
+            "summary": "",
+            "highlights": [
+                "Sample Text",
+                "sub text",
+                "list up information."
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Banner",
+            "date": "2000-06-15",
+            "awarder": "banner",
+            "summary": "1회 배너"
+        }
+    ],
     "name": {
         "kr": "남 협수"
     },
@@ -37,43 +112,43 @@
     "career": [
         {
             "date": "2018/01 ~ Now",
-            "office": "프리랜서"
+            "title": "프리랜서"
         },
         {
             "date": "2015/04 ~ 2017/12",
-            "office": "(주)플라이트그래프 정사원근무"
+            "title": "(주)플라이트그래프 정사원근무"
         },
         {
             "date": "2013/06 ~ 2015/03",
-            "office": "(주)크루메이트 정사원근무"
+            "title": "(주)크루메이트 정사원근무"
         },
         {
             "date": "2013/04 ~ 2013/05",
-            "office": "프리랜서"
+            "title": "프리랜서"
         },
         {
             "date": "2008/01 ~ 2013/03",
-            "office": "(주)TYO 정사원근무"
+            "title": "(주)TYO 정사원근무"
         },
         {
             "date": "2006/01 ~ 2007/12",
-            "office": "(유)Azincourt 아르바이트근무"
+            "title": "(유)Azincourt 아르바이트근무"
         },
         {
             "date": "2002/09 ~ 2003/03",
-            "office": "프리랜서"
+            "title": "프리랜서"
         },
         {
             "date": "2002/05 ~ 2002/08",
-            "office": "(주)마이클럽 계약직근무"
+            "title": "(주)마이클럽 계약직근무"
         },
         {
             "date": "2001/06 ~ 2002/04",
-            "office": "프리랜서"
+            "title": "프리랜서"
         },
         {
             "date": "1999/03 ~ 2001/05",
-            "office": "(유)콤마 커뮤니케이션 웹디자이너 정사원근무"
+            "title": "(유)콤마 커뮤니케이션 웹디자이너 정사원근무"
         }
     ],
     "record": [
@@ -235,8 +310,13 @@
             "project": [
                 {
                     "title": "N.Y.SALAD",
-                    "part": "",
+                    "part": "사이트 구축",
                     "persentage": "기획 30%, 디자인 100%, 마크업 100%, 플래시 100%"
+                },
+                {
+                    "title": "의료관련 컨텐츠",
+                    "part": "플래시 애니메이션",
+                    "persentage": "플래시 100%"
                 }
             ]
         },
@@ -289,7 +369,7 @@
         "date": "2005/02",
         "title": "일본어능력시험(JLPT) 1급 취득"
     },
-    "announce":
+    "publications":
     {
         "date": "2015/03/14, 21, 28",
         "title": "처음배우는 HTML, CSS"

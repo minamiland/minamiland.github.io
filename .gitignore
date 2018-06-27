@@ -5,11 +5,13 @@ yarn.lock
 Gemfile.lock
 package-lock.json
 node_modules/
+*.map
 
 ### macOS ###
 *.DS_Store
 .AppleDouble
 .LSOverride
+*.codekit3
 
 # Icon must end with two \r
 Icon

@@ -5,7 +5,7 @@
 <meta name="keywords" content="이력서, 履歴書, 南　協秀, ナム ヒョブス, resume, Nam Hyubsoo" />
 <meta name="description" content="남협수의 이력서입니다." />
 <title>minamiland</title>
-<link rel="stylesheet" type="text/css" href="screen.css" />
+<link rel="stylesheet" type="text/css" href="resume.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 	$(document).ready( function() {
@@ -16,10 +16,11 @@
 			url : 'info.json',
 			error: function(resume) {
 				var str = "";
-				str += $('body').html("<div class='error'>불러들이지 못했습니다.</div>");
+				str += $('body').html("<div class='error'>불러오지 못했습니다.</div>");
 			},
 			success: function(resume) {
 				var str, i, j, k, l, m = "";
+				
 				str += $('#photo').append("<img src='" + resume.photo.img + "' alt='my photo'></div>");
 
 				str += $('#name').before("<h2 class='title'>" + resume.title.personal + "</h2>");
@@ -42,7 +43,7 @@
 				str += $('#career').append("<h2 class='title'>" + resume.title.career + "</h2>");
 				for ( var i in resume.career ) {
 					str += $('#career').append("<div class='date'>" + resume.career[i].date + "</div>");
-					str += $('#career').append("<div class='box'>" + resume.career[i].office + "</div>");
+					str += $('#career').append("<div class='box'>" + resume.career[i].title + "</div>");
 				};
 				
 				str += $('#record').append("<h2 class='title'>" + resume.title.record + "</h2>");
@@ -54,17 +55,14 @@
 					"<div class='record_office_description'>" + resume.record[i].description + "</div>");
 					
 					if ( $('#record').hasClass('.date_box') ) {
-						console.log('wow');
-						// str += $('#record').append("<div>11</div>");
+						str += $('#record').append("<div class='error'>불러오지 못했습니다.</div>");
 					} else {
-						console.log('mom');						
-						// str += $('#record').append("<div>21</div>");
 						for ( var k in resume.record[i].project ) {
 							str += $('#record').append(
 							"<div class='project_box'><div class='date_box'>" + 
 							"<span>" + resume.record[i].project[k].title + "</span>" + 
 							" : <span>" + resume.record[i].project[k].part + "</span>" + 
-							" (<span>" + resume.record[i].project[k].persentage + "</span>)" + 
+							" (" + resume.record[i].project[k].persentage + "</span>)" + 
 							"</div></div>");
 						};
 					}
@@ -82,9 +80,9 @@
 				str += $('#certificate').append("<div class='date'>" + resume.certificate.date + "</div>");
 				str += $('#certificate').append("<div class='box'>" + resume.certificate.title + "</div>");
 				
-				str += $('#announce').append("<h2 class='title'>" + resume.title.announce + "</h2>");
-				str += $('#announce').append("<div class='date'>" + resume.announce.date + "</div>");
-				str += $('#announce').append("<div class='box'>" + resume.announce.title + "</div>");
+				str += $('#publications').append("<h2 class='title'>" + resume.title.publications + "</h2>");
+				str += $('#publications').append("<div class='date'>" + resume.publications.date + "</div>");
+				str += $('#publications').append("<div class='box'>" + resume.publications.title + "</div>");
 			}
     });
 	});
@@ -92,6 +90,7 @@
 </head>
 <body>
 	<div id="wrapper">
+		<div id="sample"></div>
 		<div id="personal">
 				<p id="photo"></p>
 				<p id="name"></p>
@@ -104,7 +103,7 @@
 		<div id="military"></div>
 		<div id="overseasstudy"></div>
 		<div id="certificate"></div>
-		<div id="announce"></div>
+		<div id="publications"></div>
 	</div>
 </body>
 </html>
