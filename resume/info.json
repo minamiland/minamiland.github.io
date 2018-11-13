@@ -153,6 +153,32 @@
     ],
     "record": [
         {
+            "date": "2018/08 ~ 2018/11",
+            "title": "프리랜서",
+            "part": "",
+            "description": "",
+            "project": [
+                {
+                    "title": "CJ ENM AMEX",
+                    "part": "CJ ENM AMEX(Advanced Media Exchange) - 고도화 작업 참여",
+                    "persentage": "Vue(Vuetify)를 기반으로한 디자인, 마크업 각 100%"
+                }
+            ]
+        },
+        {
+            "date": "2018/07 ~ 2018/08",
+            "title": "프리랜서",
+            "part": "",
+            "description": "",
+            "project": [
+                {
+                    "title": "AMOREPACIFIC",
+                    "part": "AMOREPACIFIC VPN 접속 페이지 개선작업 참여",
+                    "persentage": "디자인, 마크업 각 100%"
+                }
+            ]
+        },
+        {
             "date": "2018/01 ~ 2018/03",
             "title": "프리랜서",
             "part": "",
