@@ -9,7 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 	$(document).ready( function() {
-    $.ajax({
+		$.ajax({
 			type : 'get',
 			dataType: 'json',
 			data : {},
@@ -48,23 +48,66 @@
 				
 				str += $('#record').append("<h2 class='title'>" + resume.title.record + "</h2>");
 				for ( var i in resume.record ) {
-					str += $('#record').append(
-					"<div class='date'><div class='record_office_date'>" + resume.record[i].date + "</div></div>" + 
-					"<div class='box'><div class='record_office_title'>" + resume.record[i].title + "</div>" +
-					"<div class='record_office_part'>" + resume.record[i].part + "</div>" + 
-					"<div class='record_office_description'>" + resume.record[i].description + "</div>");
-					
 					if ( $('#record').hasClass('.date_box') ) {
 						str += $('#record').append("<div class='error'>불러오지 못했습니다.</div>");
 					} else {
-						for ( var k in resume.record[i].project ) {
+						
+						str += $('#record').append(
+							"<div class='record_box'>" +
+								"<div class='date'>" +
+									"<div class='record_office_date'>" + resume.record[i].date + "</div>" +
+									"<div class='record_office_title'>" + resume.record[i].title + "</div>" +
+								"</div>" +
+							"</div>"
+						);
+
+						if ( resume.record[i].part !== null ) {
 							str += $('#record').append(
-							"<div class='project_box'><div class='date_box'>" + 
-							"<span>" + resume.record[i].project[k].title + "</span>" + 
-							" : <span>" + resume.record[i].project[k].part + "</span>" + 
-							" (" + resume.record[i].project[k].persentage + "</span>)" + 
-							"</div></div>");
-						};
+								"<div class='box'>" +
+									"<div class='record_office_part'>" + resume.record[i].part + "</div>" + 
+								"</div>"
+							);
+						}
+
+						if ( resume.record[i].description !== null ) {
+							str += $('#record').append(
+								"<div class='box'>" +
+									"<div class='record_office_description'>" + resume.record[i].description + "</div>" +
+								"</div>"
+							);
+						}
+						
+						for ( var j in resume.record[i].project ) {
+							if ( resume.record[i].project[j].href == null ) {
+								str += $('#record').append(
+									"<div class='project_box'>" +
+										"<ul class='date_box'>" +
+										"<li>" +
+										"<span class='record_project_title'>" + resume.record[i].project[j].title + "</span>" +
+										"<span class='record_project_part'>" + resume.record[i].project[j].part + "</span>" +
+										"<span class='record_project_persentage'>(" + resume.record[i].project[j].persentage + ")</span>" +
+										"</li>" +
+										"</ul>" +
+									"</div>"
+								);
+							} else {
+								str += $('#record').append(
+									"<div class='project_box'>" +
+										"<ul class='date_box'>" +
+										"<li>" +
+										"<span class='record_project_title'>" + 
+											"<a href='" + resume.record[i].project[j].href + " 'target='_blank'>" +
+											resume.record[i].project[j].title + 
+											"</a>" +
+										"</span>" +
+										"<span class='record_project_part'>" + resume.record[i].project[j].part + "</span>" +
+										"<span class='record_project_persentage'>(" + resume.record[i].project[j].persentage + ")</span>" +
+										"</li>" +
+										"</ul>" +
+									"</div>"
+								);
+							}
+						}
 					}
 				};
 	
@@ -84,15 +127,14 @@
 				str += $('#publications').append("<div class='date'>" + resume.publications.date + "</div>");
 				str += $('#publications').append("<div class='box'>" + resume.publications.title + "</div>");
 			}
-    });
+    	});
 	});
 </script>
 </head>
 <body>
 	<div id="wrapper">
-		<div id="sample"></div>
 		<div id="personal">
-				<p id="photo"></p>
+				<!-- <p id="photo"></p> -->
 				<p id="name"></p>
 				<p id="email"></p>
 				<p id="portfolio"></p>

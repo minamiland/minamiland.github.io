@@ -111,81 +111,58 @@
     ],
     "career": [
         {
-            "date": "2018/01 ~ Now",
-            "title": "프리랜서"
-        },
-        {
             "date": "2015/04 ~ 2017/12",
-            "title": "(주)플라이트그래프 정사원근무"
+            "title": "(주)플라이트그래프 정사원근무",
+            "reason": "개인사정에 의한 퇴사"
         },
         {
             "date": "2013/06 ~ 2015/03",
-            "title": "(주)크루메이트 정사원근무"
-        },
-        {
-            "date": "2013/04 ~ 2013/05",
-            "title": "프리랜서"
+            "title": "(주)크루메이트 정사원근무",
+            "reason": "개인사정에 의한 퇴사"
         },
         {
             "date": "2008/01 ~ 2013/03",
-            "title": "(주)TYO 정사원근무"
+            "title": "(주)TYO 정사원근무",
+            "reason": "개인사정에 의한 퇴사"
         },
         {
             "date": "2006/01 ~ 2007/12",
-            "title": "(유)Azincourt 아르바이트근무"
-        },
-        {
-            "date": "2002/09 ~ 2003/03",
-            "title": "프리랜서"
+            "title": "(유)Azincourt 아르바이트근무",
+            "reason": "개인사정에 의한 퇴사"
         },
         {
             "date": "2002/05 ~ 2002/08",
-            "title": "(주)마이클럽 계약직근무"
-        },
-        {
-            "date": "2001/06 ~ 2002/04",
-            "title": "프리랜서"
+            "title": "(주)마이클럽 계약직근무",
+            "reason": "개인사정에 의한 퇴사"
         },
         {
             "date": "1999/03 ~ 2001/05",
-            "title": "(유)콤마 커뮤니케이션 웹디자이너 정사원근무"
+            "title": "(유)콤마 커뮤니케이션 웹디자이너 정사원근무",
+            "reason": "개인사정에 의한 퇴사"
         }
     ],
     "record": [
         {
-            "date": "2018/08 ~ 2018/11",
+            "date": "2018/01 ~ now",
             "title": "프리랜서",
-            "part": "",
-            "description": "",
+            "part": null,
+            "description": null,
             "project": [
                 {
                     "title": "CJ ENM AMEX",
-                    "part": "CJ ENM AMEX(Advanced Media Exchange) - 고도화 작업 참여",
+                    "href": null,
+                    "part": "AMEX(Advanced Media Exchange) - 고도화 작업 참여",
                     "persentage": "Vue(Vuetify)를 기반으로한 디자인, 마크업 각 100%"
-                }
-            ]
-        },
-        {
-            "date": "2018/07 ~ 2018/08",
-            "title": "프리랜서",
-            "part": "",
-            "description": "",
-            "project": [
+                },
                 {
                     "title": "AMOREPACIFIC",
+                    "href": null,
                     "part": "AMOREPACIFIC VPN 접속 페이지 개선작업 참여",
                     "persentage": "디자인, 마크업 각 100%"
-                }
-            ]
-        },
-        {
-            "date": "2018/01 ~ 2018/03",
-            "title": "프리랜서",
-            "part": "",
-            "description": "",
-            "project": [
+                },
                 {
                     "title": "SAMSUNG SDS",
+                    "href": null,
                     "part": "SAMSUNG PASS 백오피스 리뉴얼 프로젝트",
                     "persentage": "디자인, 마크업 각 100%"
                 }
@@ -199,11 +176,13 @@
             "project": [
                 {
                     "title": "FLTGRAPH",
+                    "href": null,
                     "part": "항공권 예매사이트 구축 및 운영",
                     "persentage": "디자인 100%/마크업90%"
                 },
                 {
                     "title": "티웨이항공 리뉴얼",
+                    "href": null,
                     "part": "마크업 PL로 주요 과업이었던 웹접근성 인증마크 취득",
                     "persentage": "마크업 50%"
                 }
@@ -217,12 +196,14 @@
             "project": [
                 {
                     "title": "내부프로젝트",
+                    "href": null,
                     "part": "FLTGRAPH(가제) 항공권예매사이트 구축",
                     "persentage": "디자인 100%/마크업90%"
                 },
                 {
-                    "title": "동원 홈 푸드 HMR 온라인몰 구축",
-                    "part": "",
+                    "title": "동원 홈 푸드",
+                    "href": null,
+                    "part": "HMR(병원식) 온라인몰 구축",
                     "persentage": "PC, 모바일 마크업 80%, PL"
                 },
                 {
@@ -231,8 +212,8 @@
                     "persentage": "마크업 100%, PM"
                 },
                 {
-                    "title": "중소기업유통센터 온라인 플렛폼 구축",
-                    "part": "",
+                    "title": "중소기업유통센터",
+                    "part": "중소기업을 대상으로 하는 온라인 플렛폼 구축",
                     "persentage": "마크업 PL"
                 }
             ]
@@ -240,8 +221,8 @@
         {
             "date": "2013/04 ~ 2015/05",
             "title": "프리랜서",
-            "part": "마크업작업",
-            "description": "",
+            "part": null,
+            "description": null,
             "project": [
                 {
                     "title": "우에노 법률비지니스전문학교",
@@ -332,7 +313,7 @@
             "date": "2006/01 ~ 2007/12",
             "title": "유한회사 Azincourt",
             "part": "마크업작업",
-            "description": "",
+            "description": null,
             "project": [
                 {
                     "title": "N.Y.SALAD",
@@ -350,34 +331,34 @@
             "date": "2002/09 ~ 2003/03",
             "title": "프리랜서",
             "part": "대전 지역을 중심으로 국가지원 중소기업대상의 웹 디자인, CD타이틀 제작참여",
-            "description": "",
+            "description": null,
             "project": []
         },
         {
             "date": "2002/05 ~ 2002/08",
             "title": "주식회사 마이클럽닷컴",
             "part": "3개월 계약직으로 Mi CLUB뷰티센터등 유지보수 담당",
-            "description": "",
+            "description": null,
             "project": []
         },
         {
             "date": "2001/06 ~ 2002/04",
             "title": "프리랜서",
             "part": "BMG Korea (메인 디자인 - 전체 사이트 디자인담당, 배너제작)등",
-            "description": "",
+            "description": null,
             "project": []
         },
         {
             "date": "1999/11 ~ 2001/05",
             "title": "유한회사 콤마 커뮤니케이션",
             "part": "웹디자이너로 배너제작등을 주로 담당",
-            "description": ""
+            "description": null
         },
         {
             "date": "1999/03 ~ 1999/10",
             "title": "유한회사 콤마 커뮤니케이션",
             "part": "그래픽 디자이너로 신문, 잡지등의 광고 이미지제작 ",
-            "description": ""
+            "description": null
         }
     ],
     "military":

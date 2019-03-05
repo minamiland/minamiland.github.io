@@ -5,6 +5,7 @@ body {
     font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", -apple-system, BlinkMacSystemFont, "Sans-serif";
     color:#333; 
     font-size: 14px;
+    font-weight: 200;
     padding: 0; 
     margin: 0; 
 }
@@ -84,9 +85,10 @@ body div[class="title"] {
 }
 
 #wrapper {
-    max-width: 640px;
+    max-width: 960px;
     min-width: 320px;
     margin: 0 auto;
+    padding: 24px;
 }
 
 #record .record_office_part,
@@ -129,8 +131,7 @@ body div[class="title"] {
     clear: left;
 }
 
-#record .date,
-#record .box {
+#record .date {
     padding-bottom: 10px;
 }
 
@@ -153,9 +154,33 @@ body div[class="title"] {
     vertical-align: top;
 }
 
+#record .title {
+    margin-bottom: -10px;
+}
+
+#record .record_box {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
 #record .record_office_title,
 #record .record_project_title {
     display: block;
+}
+
+#record .record_office_date {
+    font-size: 1.4em;
+}
+
+#record {
+    .date {
+        width: 100%;
+    }
+    .box {
+        width: 90%;
+        padding-left: 10%;
+    }
 }
 
 #record .record_office_part,
@@ -164,21 +189,41 @@ body div[class="title"] {
 #record .record_project_part,
 #record .record_project_persentage {
     /* line-height: 1em; */
-    display: block;
-    width: 75%;
-    font-size: 12px;
+    display: inline-block;
+    // width: 75%;
+    // font-size: 14px;
+}
+
+#record .record_project_title {
+    color: #222;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+#record .record_project_persentage {
+    margin-left: 5px;
+}
+
+#record .record_office_description {
+    margin-bottom: 10px;
 }
 
 .date_box {
     box-sizing: border-box;
-    font-size: 12px;
+    // font-size: 14px;
 }
 
 .project_box {
     /* padding-bottom: 20px; */
-    padding-left: 25%;
+    padding-left: 10%;
     .date_box {
-        width: 120%;
+        // width: 120%;
+    }
+}
+
+#record_box {
+    .box {
+        display: block;
     }
 }
 
