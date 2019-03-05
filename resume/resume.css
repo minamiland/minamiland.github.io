@@ -3,29 +3,26 @@
 body {
   font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", -apple-system, BlinkMacSystemFont, "Sans-serif";
   color: #333;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 200;
   padding: 0;
   margin: 0; }
 
-header {
-  margin-top: 50px; }
-  header p {
-    display: block;
-    width: 750px;
-    margin: 0 auto; }
+header p {
+  display: block;
+  width: 760px;
+  margin: 0 auto; }
 
 article {
   display: block;
-  width: 750px;
+  width: 760px;
   margin: 0 auto; }
 
 footer {
   margin: 0 auto;
   border-top: 2px solid #222;
-  width: 740px;
-  height: 100px;
-  font-size: 1rem; }
+  width: 760px;
+  height: 80px; }
   footer p {
     text-align: right;
     text-transform: capitalize;
@@ -38,35 +35,26 @@ footer {
 
 h1 {
   text-transform: lowercase;
-  width: 740px;
+  width: 760px;
   margin: 0 auto;
-  padding: 20px 0 0; }
+  padding: 24px 0 0; }
 
-/* h2 { text-transform:capitalize; padding-top: 10px; border-top: 2px solid #222222; } */
 h2 {
-  margin: 0;
-  padding-bottom: 10px; }
+  margin: 0 0 8px; }
+  h2.title {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #222;
+    padding: 8px 16px;
+    font-weight: 200;
+    border-radius: 8px; }
 
-/* dl { line-height: 1.5; } */
-dt {
-  float: left;
-  width: 160px; }
-
-dd {
-  width: 550px; }
-  dd p {
-    padding-top: 0;
-    margin-top: 0; }
-  dd span {
-    color: #8c8c8c; }
-
-/* .info { display: block; width: 470px;} */
 .photo {
   border-radius: 50% 0 50% 50%;
-  padding: 0 0 0 10px; }
+  padding: 0 0 0 8px; }
 
 ul {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 16px;
   margin: 0; }
   ul li {
     font-style: normal;
@@ -108,7 +96,7 @@ a, a:hover, a:active {
   display: inline-block; }
 
 .last {
-  padding-bottom: 20px; }
+  padding-bottom: 16px; }
 
 html[xmlns] .clearfix {
   display: block; }
@@ -121,20 +109,20 @@ html[xmlns] .clearfix {
   margin: 0 auto;
   color: #FFF;
   background-color: #222;
-  padding: 10px 5%;
+  padding: 8px 5%;
   text-align: center;
   font-weight: normal;
   font-size: 1rem;
   position: fixed;
   top: 0;
   opacity: 0.9;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5); }
 
 body div[id] {
-  padding-bottom: 30px; }
+  padding-bottom: 24px; }
 
 body .subbox {
-  padding-bottom: 10px; }
+  padding-bottom: 8px; }
 
 body div[class="title"] {
   display: inline-block; }
@@ -143,7 +131,7 @@ body div[class="title"] {
   max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 24px; }
+  padding: 32px; }
 
 #record .record_office_part,
 #record .record_office_description,
@@ -153,8 +141,7 @@ body div[class="title"] {
   color: #999; }
 
 #record .record_office_title {
-  font-weight: bolder;
-  padding-bottom: 5px; }
+  font-weight: bolder; }
 
 #record .record_office_date,
 #record .record_office_title,
@@ -164,6 +151,10 @@ body div[class="title"] {
 #record .record_project_part,
 #record .record_project_persentage {
   display: inline-block; }
+
+#personal p {
+  padding: 0;
+  margin: 0; }
 
 #name .title,
 #email .title,
@@ -177,16 +168,13 @@ body div[class="title"] {
 #certificate .date,
 #announce .date {
   display: inline-block;
-  width: 25%;
+  width: 152px;
   vertical-align: top;
   clear: left; }
 
 #record .date {
-  padding-bottom: 10px; }
+  padding-bottom: 8px; }
 
-/* #record .date_box {
-    padding-bottom: 5px;
-} */
 #name .box,
 #email .box,
 #portfolio .box,
@@ -198,23 +186,25 @@ body div[class="title"] {
 #certificate .box,
 #announce .box {
   display: inline-block;
-  width: 75%;
+  width: calc(100% - 152px);
   vertical-align: top; }
 
 #record .title {
-  margin-bottom: -10px; }
+  margin-bottom: -8px; }
 
 #record .record_box {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #ccc; }
+  margin-top: 8px;
+  padding-top: 8px; }
 
 #record .record_office_title,
 #record .record_project_title {
   display: block; }
 
 #record .record_office_date {
-  font-size: 1.4em; }
+  font-size: 1.4rem;
+  display: block;
+  padding: 16px 0 0;
+  border-top: 1px solid #ccc; }
 
 #record .date {
   width: 100%; }
@@ -223,34 +213,55 @@ body div[class="title"] {
   width: 90%;
   padding-left: 10%; }
 
-#record .record_office_part,
-#record .record_office_description,
-#record .record_project_title,
-#record .record_project_part,
-#record .record_project_persentage {
-  /* line-height: 1em; */
-  display: inline-block; }
+#record sup {
+  display: inline;
+  color: #222; }
+
+#record .record_office_part {
+  margin-bottom: 8px; }
 
 #record .record_project_title {
   color: #222;
   font-weight: bolder;
-  margin-right: 10px; }
+  margin-right: 8px; }
 
 #record .record_project_persentage {
-  margin-left: 5px; }
+  margin-left: 8px; }
 
 #record .record_office_description {
-  margin-bottom: 10px; }
+  margin-bottom: 8px; }
 
 .date_box {
   box-sizing: border-box; }
 
 .project_box {
-  /* padding-bottom: 20px; */
   padding-left: 10%; }
-
-#record_box .box {
-  display: block; }
 
 .record_sample {
   color: #C00; }
+
+@media only screen and (max-width: 460px) {
+  #career .date,
+  #education .date,
+  #military .date,
+  #overseasstudy .date,
+  #certificate .date,
+  #publications .date {
+    width: 100%; }
+  #career .box,
+  #education .box,
+  #military .box,
+  #overseasstudy .box,
+  #certificate .box,
+  #publications .box {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px; }
+  #record .box {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0; }
+  #record .project_box {
+    padding-left: 0; }
+    #record .project_box li {
+      padding-bottom: 8px; } }

@@ -151,8 +151,8 @@
                 {
                     "title": "CJ ENM AMEX",
                     "href": null,
-                    "part": "AMEX(Advanced Media Exchange) - 고도화 작업 참여",
-                    "persentage": "Vue(Vuetify)를 기반으로한 디자인, 마크업 각 100%"
+                    "part": "AMEX <sup>(Advanced Media Exchange)</sup>고도화",
+                    "persentage": "Vue, Vuetify를 기반으로한 마크업 각 100%"
                 },
                 {
                     "title": "AMOREPACIFIC",
@@ -171,7 +171,7 @@
         {
             "date": "2015/04 ~ 2017/12",
             "title": "주식회사 플라이트그래프",
-            "part": "디자이너의 결여로 인해 자사 서비스의 디자인 업무와 마크업 업무를 전담",
+            "part": "디자이너의 결여로 자사 서비스의 디자인 업무와 마크업 업무를 전담",
             "description": "플라이트그래프는 2017년에 티켓몬스터에 매각되었으며 해당년도부터 마크업만을 담당",
             "project": [
                 {
@@ -226,12 +226,12 @@
             "project": [
                 {
                     "title": "우에노 법률비지니스전문학교",
-                    "part": "",
+                    "part": "홈페이지 구축",
                     "persentage": "RWD마크업 100%/모바일 디자인"
                 },
                 {
                     "title": "E-Patch : 일반사단법인 어린이의 엠파워먼트 이와테",
-                    "part": "",
+                    "part": "홈페이지 구축",
                     "persentage": "마크업 100%"
                 }
             ]
@@ -240,7 +240,7 @@
             "date": "2008/01 ~ 2013/03",
             "title": "주식회사 TYO",
             "part": "웹디자이너겸 마크업엔지니어로 운영위주의 작업을 진행",
-            "description": "삿포로맥주 브랜드의 총괄적인 역할을 수행하는 과정에서 좋은 평가를 받아 다른 브랜드의 담당도 겸임, 운영업무와는 별도로 다수의 구축프로젝트에 관여하여 디자인 또는 마크업을 담당",
+            "description": "삿포로 맥주의 브랜드중 일부를 관리업무를 수행하는 과정에서 좋은 평가를 받아 다른 브랜드의 담당도 겸임.<br>운영업무와는 별도로 다수의 구축 프로젝트에 관여하여 디자인 또는 마크업을 담당",
             "project": [
                 {
                     "title": "SAPPORO",
@@ -312,7 +312,7 @@
         {
             "date": "2006/01 ~ 2007/12",
             "title": "유한회사 Azincourt",
-            "part": "마크업작업",
+            "part": null,
             "description": null,
             "project": [
                 {
