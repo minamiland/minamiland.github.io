@@ -119,7 +119,7 @@ body div[class="title"] {
 
 #wrapper {
     max-width: 960px;
-    min-width: 320px;
+    // min-width: 320px;
     margin: 0 auto;
     padding: 32px;
 }
@@ -255,7 +255,20 @@ body div[class="title"] {
 }
 
 @media only screen 
-and (max-width : 460px) {
+and (max-width : 320px) {
+    #wrapper {
+        padding: 16px;
+        font-size: 0.9rem;
+    }
+
+    #name,
+    #email,
+    #portfolio {
+        .title {
+            width: 104px;
+        }
+    }
+
     #career,
     #education,
     #military,

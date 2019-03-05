@@ -129,7 +129,6 @@ body div[class="title"] {
 
 #wrapper {
   max-width: 960px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 32px; }
 
@@ -240,7 +239,14 @@ body div[class="title"] {
 .record_sample {
   color: #C00; }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 320px) {
+  #wrapper {
+    padding: 16px;
+    font-size: 0.9rem; }
+  #name .title,
+  #email .title,
+  #portfolio .title {
+    width: 104px; }
   #career .date,
   #education .date,
   #military .date,
