@@ -149,6 +149,12 @@
             "description": null,
             "project": [
                 {
+                    "title": "국기원(모바일앱 도장관리)",
+                    "href": null,
+                    "part": "관장/사범/학부모를 대상으로 하며 국기원에서 전국의 도장관리를 위한 신규 구축 프로젝트",
+                    "persentage": "기획 50%, 마크업 100%"
+                },
+                {
                     "title": "CJ ENM AMEX",
                     "href": null,
                     "part": "AMEX <sup>(Advanced Media Exchange)</sup>고도화",
@@ -178,7 +184,7 @@
                     "title": "FLTGRAPH",
                     "href": null,
                     "part": "항공권 예매사이트 구축 및 운영",
-                    "persentage": "디자인 100%/마크업90%"
+                    "persentage": "디자인 100%, 마크업90%"
                 },
                 {
                     "title": "티웨이항공 리뉴얼",
@@ -198,7 +204,7 @@
                     "title": "내부프로젝트",
                     "href": null,
                     "part": "FLTGRAPH(가제) 항공권예매사이트 구축",
-                    "persentage": "디자인 100%/마크업90%"
+                    "persentage": "디자인 100%, 마크업90%"
                 },
                 {
                     "title": "동원 홈 푸드",
@@ -227,7 +233,7 @@
                 {
                     "title": "우에노 법률비지니스전문학교",
                     "part": "홈페이지 구축",
-                    "persentage": "RWD마크업 100%/모바일 디자인"
+                    "persentage": "RWD마크업 100%, 모바일 디자인"
                 },
                 {
                     "title": "E-Patch : 일반사단법인 어린이의 엠파워먼트 이와테",
