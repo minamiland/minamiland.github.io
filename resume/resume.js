@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function(){
               recordArea += '<p>'
               recordArea += '<span class="record_project_title">' + item.record[a].project[b].title + '</span>'
               recordArea += item.record[a].project[b].date ? '<span style="display:block">' + item.record[a].project[b].date + '</span>' : ''
-              recordArea += item.record[a].project[b].href ? item.record[a].project[b].href + ' / ' : ''
               if (item.record[a].project !== null) {
                 recordArea += '<span class="record_project_part">'
                 if (item.record[a].project[b].subproject !== null) {
@@ -118,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
                 recordArea += '</span>'
               }
+              recordArea += item.record[a].project[b].href ? '<span style="display:block"><a href="https://portfolio.may5.net/' + item.record[a].project[b].href + '">Project description</a></span>' : ''
               recordArea += '</p>'
             }
             recordArea += '</div>'
@@ -156,11 +156,18 @@ document.addEventListener('DOMContentLoaded', function(){
       
       let publicationsArea = ''
       publicationsArea += '<h2 class="title">' + item.title.publications + '</h2>'
-      publicationsArea += '<ul class="career">'
-        publicationsArea += '<li>'
-        publicationsArea += '<span class="date">' + item.publications.date + '</span>'
-        publicationsArea += '<span class="box">' + item.publications.title + '</span>'
-        publicationsArea += '</li>'
+      publicationsArea += '<ul class="record">'
+      publicationsArea += '<li>'
+      publicationsArea += '<span class="record_office_title">' + item.publications.title + '</span>'
+      publicationsArea += '<ul>'
+        for (a in item.publications.data) {
+          publicationsArea += '<li>'
+          publicationsArea += '<span>' + item.publications.data[a].date + '</span> '
+          publicationsArea += '<span><a href="https://www.slideshare.net/minamiland/' + item.publications.data[a].link + '">' + item.publications.data[a].title + '</a></span>'
+          publicationsArea += '</li>'
+        }
+      publicationsArea += '</ul>'
+      publicationsArea += '</li>'
       publicationsArea += '</ul>'
       
       let educationArea = ''
@@ -232,8 +239,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
       // ==============================
       // 리스트 영역
-      personalInfo.append('<div id="wrapper">'
-        + basicsArea
+      personalInfo.append(
+        basicsArea
         // + profileArea
         // + languageArea
         // + skillArea
@@ -244,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function(){
         + militaryArea
         + certificateArea
         + publicationsArea
-      + '</div>')
+      )
 
       // jp.append('<li class="list-item">'
       //   + '<div data-userid=' + item.id + '>'
