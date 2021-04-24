@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function(){
       // 리스트 영역
       personalInfo.append('<div id="wrapper">'
         + basicsArea
-        + profileArea
+        // + profileArea
         // + languageArea
         // + skillArea
         + educationArea
