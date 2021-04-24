@@ -7,7 +7,7 @@
       "personal": "개인정보",
       "name": "이름",
       "email": "이메일",
-      "portfolio": "포트폴리오",
+      "skill": "기술",
       "education": "학력",
       "career": "이력",
       "language": "언어",
@@ -19,12 +19,12 @@
     },
     "basics": {
       "name": "남 협수",
-      "label": "markup enginner",
+      "label": "HTML markup enginner",
       "picture": null,
-      "email": "minamiland@gmail.com",
+      "email": null,
       "phone": null,
-      "website": "https://may5.net",
-      "summary": "서울시 은평구",
+      "website": null,
+      "summary": null,
       "location": {
         "address": null,
         "postalCode": null,
@@ -60,15 +60,15 @@
         "fluency": "Business speaker"
       }
     ],
-    "skills": [
+    "skills": 
       {
-        "name": "Web Markup Enginner",
-        "level": "Master",
+        "name": "Web HTML Markup Enginner",
+        "level": null,
         "keywords": [
-          "HTML", "CSS", "SCSS", "LESS"
+          "HTML/HTML5", "CSS/CSS3", "SCSS", "LESS", "jQuery"
         ]
       }
-    ],
+    ,
     "work": [
       {
         "company": "",
@@ -475,5 +475,5 @@
         "date": "2015/03/14, 21, 28",
         "title": "처음배우는 HTML, CSS"
     }
-  } 
+  }
 ]
