@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function(){
         + basicsArea
         + profileArea
         // + languageArea
-        + skillArea
+        // + skillArea
         + educationArea
         + overseasstudyArea
         + workArea
