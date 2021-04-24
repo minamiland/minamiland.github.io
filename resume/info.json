@@ -183,7 +183,7 @@
           {
             "date":"2020/09 ~ 2020/10",
             "title": "자연이랑",
-            "href": null,
+            "href": 72,
             "part": "SK그룹의 (재)행복에프앤씨 '자연이랑' 웹사이트 개발 프로젝트 참여",
             "persentage": "마크업 지원",
             "subproject": null
@@ -191,7 +191,7 @@
           {
             "date":"2020/02 ~ 2020/08",
             "title": "국기원(모바일앱 도장관리) 2차",
-            "href": null,
+            "href": 71,
             "part": "국기원에서 전국의 도장관리를 위한 발족된 프로젝트로 2차 사업에 참여하여 모바일앱의 기획과 마크업을 담당",
             "persentage": "기획 90%, 마크업 100%",
             "subproject": null
@@ -199,7 +199,7 @@
           {
             "date":"2019/10/21 ~ 2019/12/20",
             "title": "NEXEN",
-            "href": null,
+            "href": 70,
             "part": "NEXEN타이어의 'NEXT LEVEL' 프로젝트에 참여하여 모바일 마크업을 담당",
             "persentage": "마크업 100%",
             "subproject": null
@@ -207,7 +207,7 @@
           {
             "date":"2019/03 ~ 2019/09",
             "title": "국기원(모바일앱 도장관리) 1차",
-            "href": null,
+            "href": 65,
             "part": "관장/사범/학부모를 대상으로 전국의 도장관리를 위해 국기원에서 발족시킨 구축 프로젝트에 기획과 마크업을 담당",
             "persentage": "기획 50%, 마크업 100%, 마크업 가이드 작업",
             "subproject": null
@@ -215,7 +215,7 @@
           {
             "date":"2018/08 ~ 2018/11",
             "title": "CJ ENM AMEX",
-            "href": null,
+            "href": 64,
             "part": "AMEX <sup>(Advanced Media Exchange)</sup>고도화",
             "persentage": "Vue, Vuetify를 기반으로한 마크업 각 100%",
             "subproject": null
@@ -223,7 +223,7 @@
           {
             "date":"2018/07 ~ 2018/08",
             "title": "AMOREPACIFIC",
-            "href": null,
+            "href": 63,
             "part": "AMOREPACIFIC VPN 접속 페이지 개선작업 참여",
             "persentage": "디자인, 마크업 각 100%",
             "subproject": null
@@ -231,7 +231,7 @@
           {
             "date":"2018/01 ~ 2018/04",
             "title": "SAMSUNG SDS",
-            "href": null,
+            "href": 62,
             "part": "SAMSUNG PASS 백오피스 리뉴얼 프로젝트",
             "persentage": "디자인, 마크업 각 100%",
             "subproject": null
@@ -247,7 +247,7 @@
           {
             "date":"2015/04 ~ 2017/12",
             "title": "FLTGRAPH",
-            "href": null,
+            "href": 61,
             "part": "항공권 예매사이트 구축 및 운영",
             "persentage": "디자인 100%, 마크업90%",
             "subproject": null
@@ -255,7 +255,7 @@
           {
             "date":"2015/07 ~ 2016/02",
             "title": "티웨이항공 리뉴얼",
-            "href": null,
+            "href": 60,
             "part": "마크업 PL로 주요 과업이었던 웹접근성 인증마크 취득",
             "persentage": "마크업 50%",
             "subproject": null
@@ -271,7 +271,7 @@
           {
             "date":"2013/06 ~ 2015/03",
             "title": "내부프로젝트",
-            "href": null,
+            "href": 61,
             "part": "FLTGRAPH(가제) 항공권예매사이트 구축",
             "persentage": "디자인 100%, 마크업90%",
             "subproject": null
@@ -279,7 +279,7 @@
           {
             "date":"2014/12 ~ 2015/05",
             "title": "동원 홈 푸드",
-            "href": null,
+            "href": 59,
             "part": "HMR(병원식) 온라인몰 구축",
             "persentage": "PC, 모바일 마크업 80%, PL",
             "subproject": null
@@ -398,6 +398,7 @@
           },
           {
             "title": "CITIZEN",
+            "href": 28,
             "part": "Real Scale 블로그 파츠 &  스크린세이버 : REAL MOON Phase, 水",
             "persentage": "디자인과 디렉션 100%",
             "subproject": null
@@ -407,8 +408,8 @@
       {
         "date": "2006/01 ~ 2007/12",
         "title": "유한회사 Azincourt",
-        "part": "파트타임으로 근무하며 디자인, 코딩을 담당",
-        "description": "메이세이대학 재학중 3, 4학년의 2년간 주3일의 파트타임으로 근무하며 주로 의료관련 플래시애니메이션을 제작하였으며 운영위주의 업무를 담당",
+        "part": "메이세이대학 재학중 3, 4학년의 2년간 주3일의 파트타임으로 근무하며 디자인, 코딩을 담당",
+        "description": "주로 의료관련 플래시애니메이션을 제작하였으며 운영위주의 업무를 담당",
         "project": [
           {
             "title": "N.Y.SALAD",
@@ -441,7 +442,7 @@
       {
         "date": "2001/06 ~ 2002/04",
         "title": "프리랜서",
-        "part": "BMG Korea (메인 디자인 - 전체 사이트 디자인담당, 배너제작)등",
+        "part": "BMG Korea (메인 디자인 - 전체 사이트 디자인담당, 배너제작)등을 담당",
         "description": null,
         "project": null
       },
@@ -472,8 +473,25 @@
         "title": "일본어능력시험(JLPT) 1급 취득"
     },
     "publications": {
-        "date": "2015/03/14, 21, 28",
-        "title": "처음배우는 HTML, CSS"
+        "title": "HTML, CSS 기초 강의",
+        "data": [
+          {
+            "date": "2015/03/14",
+            "title": "처음배우는 HTML, CSS PART1",
+            "link": "basic-html-45819408"
+          },
+          {
+            "date": "2015/03/21",
+            "title": "처음배우는 HTML, CSS PART2",
+            "link": "basic-css-46101643"
+          },
+          {
+            "date": "2015/03/28",
+            "title": "처음배우는 HTML, CSS PART3",
+            "link": "htmlcss-46380845"
+          }
+        ]
     }
   }
+  
 ]
