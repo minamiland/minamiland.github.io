@@ -1,5 +1,5 @@
-@import url("/fonts/SpoqaHanSans-kr.css");
-@import url("/fonts/SpoqaHanSans-jp.css");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
 html[xmlns] .clearfix {display: block; }
 * html .clearfix {height: 1%; }
