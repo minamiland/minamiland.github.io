@@ -54,7 +54,7 @@ a, a:hover, a:active {color: #C00;text-decoration: none; }
 .date_box {box-sizing: border-box; }
 .project_box {padding-left: 10%; }
 .record_sample {color: #C00; }
-.workarea {width: 9%; display: inline-block;}
+.workarea {width: 4rem; display: inline-block;}
 .profile {padding: 0 0.75rem;}
 .profile a {padding: 0 0.25rem;}
 
