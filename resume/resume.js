@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // ==============================
   // 리스트 데이터 호출
   $.ajax({
-    url: 'info.json',
+    url: './info.json',
     type: 'get',
     dataType: 'json'
   })
@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function(){
       basicsArea += '<li>' + item.basics.name + '</li>';
       basicsArea += '<li>' + item.basics.label + '</li>';
       basicsArea += item.basics.picture ? '<li>' + item.basics.picture + '</li>' : '';
-      basicsArea += '<li class="email low">' + item.basics.email + '</li>';
+      basicsArea += item.basics.email ? '<li class="email low">' + item.basics.email + '</li>' : '';
       basicsArea += item.basics.phone ? '<li>' + item.basics.phone + '</li>' : '';
-      basicsArea += '<li class="low"><a href="' + item.basics.website + '">' + item.basics.website + '</a></li>';
-      basicsArea += '<li>' + item.basics.summary + '</li>';
+      basicsArea += item.basics.website ? '<li class="low"><a href="' + item.basics.website + '">' + item.basics.website + '</a></li>' : '';
+      basicsArea += item.basics.summary ? '<li>' + item.basics.summary + '</li>' : '';
       
       // basicsArea += '<li>'
       // basicsArea += '<span>'
@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function(){
       profileArea += '</div>';
 
       let skillArea = ''
-      skillArea += '<h2 class="title">' + item.title.portfolio + '</h2>'
+      skillArea += '<h2 class="title">' + item.title.skill + '</h2>'
       skillArea += '<ul>'
-        skillArea += '<li>' + item.skills[0].name + '</li>'
-        skillArea += '<li>' + item.skills[0].level + '</li>'
-        skillArea += '<li>' + item.skills[0].keywords + '</li>'
+        skillArea += '<li>' + item.skills.name + '</li>'
+        skillArea += item.skills.level ? '<li>' + item.skills.level + '</li>' : ''
+        skillArea += '<li>' + item.skills.keywords + '</li>'
       skillArea += '</ul>'
       
       let workArea = ''
