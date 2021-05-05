@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function(){
           workArea += '<li>'
           workArea += '<span class="date">' + item.career[a].date + '</span>'
           if (item.career[a].area !== null) {
-            workArea += '<span class="workarea">' + item.career[a].area + '</span>'
+            workArea += '<span class="area">' + item.career[a].area + '</span>'
           }
-          workArea += '<span class="">' + item.career[a].title + '</span>'
+          workArea += '<span class="info">' + item.career[a].title + '</span>'
           // workArea += item.career[a].reason
           workArea += '</li>'
         }
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function(){
           recordArea += '<li>'
           recordArea += '<div class="record_office_date">' + item.record[a].date + '</div>'
           recordArea += item.record[a].title ? '<p class="record_office_title">' + item.record[a].title + '</p>' : ''
-          recordArea += item.record[a].part ? '<p>' + item.record[a].part + '<br>' : ''
+          recordArea += item.record[a].part ? '<p class="record_office_description">' + item.record[a].part + '<br>' : ''
           recordArea += item.record[a].description ?  item.record[a].description + '</p>' : ''
           if (item.record[a].project !== null) {
             recordArea += '<div class="project_box">'
@@ -105,19 +105,21 @@ document.addEventListener('DOMContentLoaded', function(){
               if (item.record[a].project !== null) {
                 recordArea += '<span class="record_project_part">'
                 if (item.record[a].project[b].subproject !== null) {
+                  recordArea += '<ul class="sub_record_project_part">'
                   for (c in item.record[a].project[b].subproject) {
-                    recordArea += '<span style="display:block;width:100%" class="sub_record_project_part">'
+                    recordArea += '<li class="part_item">'
                     recordArea += item.record[a].project[b].subproject[c].part
                     recordArea += ' (' + item.record[a].project[b].subproject[c].persentage + ')'
-                    recordArea += '</span>'
+                    recordArea += '</li>'
                   }
+                  recordArea += '</ul>'
                 } else {
                   recordArea += item.record[a].project[b].part
                   recordArea += ' (' + item.record[a].project[b].persentage + ')'
                 }
                 recordArea += '</span>'
+                recordArea += item.record[a].project[b].href ? '<a href="https://portfolio.may5.net/' + item.record[a].project[b].href + '" class="portfolio-link">Project description <i class="fa fa-window-restore"></i></a>' : ''
               }
-              recordArea += item.record[a].project[b].href ? '<span style="display:block"><a href="https://portfolio.may5.net/' + item.record[a].project[b].href + '">Project description</a></span>' : ''
               recordArea += '</p>'
             }
             recordArea += '</div>'
@@ -140,8 +142,8 @@ document.addEventListener('DOMContentLoaded', function(){
       overseasstudyArea += '<ul class="career">'
         overseasstudyArea += '<li>'
         overseasstudyArea += '<span class="date">' + item.overseasstudy.date + '</span>'
-        overseasstudyArea += '<span class="workarea">' + item.overseasstudy.area + '</span>'
-        overseasstudyArea += '<span class="">' + item.overseasstudy.title + '</span>'
+        overseasstudyArea += '<span class="area">' + item.overseasstudy.area + '</span>'
+        overseasstudyArea += '<span class="info">' + item.overseasstudy.title + '</span>'
         overseasstudyArea += '</li>'
       overseasstudyArea += '</ul>'
       
@@ -176,8 +178,8 @@ document.addEventListener('DOMContentLoaded', function(){
         for (a in item.education) {
           educationArea += '<li>'
           educationArea += '<span class="date">' + item.education[a].date + '</span>'
-          educationArea += '<span class="workarea">' + item.education[a].area + '</span>'
-          educationArea += '<span class="">' + item.education[a].title + '</span>'
+          educationArea += '<span class="area">' + item.education[a].area + '</span>'
+          educationArea += '<span class="info">' + item.education[a].title + '</span>'
           educationArea += '</li>'
         }
       educationArea += '</ul>'

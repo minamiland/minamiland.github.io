@@ -30,16 +30,17 @@ a, a:hover, a:active {color: #C00;text-decoration: none; }
 .last {padding-bottom: 16px; }
 .subtitle {width: 90%;margin: 0 auto;color: #FFF;background-color: #222;padding: 8px 5%;text-align: center;font-weight: normal;font-size: 1rem;position: fixed;top: 0;opacity: 0.9;box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5); }
 
-#wrapper {max-width: 960px;margin: 0 auto;padding: 32px; }
+#wrapper {max-width: 960px;margin: 0 auto;padding: 2rem; }
 
+.project_box .sub_record_project_part .part_item {list-style-type: circle;margin-left: 4px;}
 .record .record_office_part,
 .record .record_office_description,
 .record .record_project_part,
 .record .record_project_persentage,
-.record .date_box {color: #999; }
-.record .record_office_title {font-weight: bolder; display: block; }
-.record .record_project_title {color: #222;font-weight: bolder; display: block;}
-.career .date,
+.record .date_box {color: #666;word-break: keep-all;}
+.record .record_office_title {font-weight: bolder; display: block; font-size: 1.25rem; }
+/* .record .record_office_description {margin-bottom: 8px; } */
+.record .record_project_title {color: #222;font-weight: bolder; display: block;word-break: keep-all;}
 .record .date {display: inline-block;width: 152px;vertical-align: top;clear: left; }
 .record .date {padding-bottom: 8px; }
 .record .title {margin-bottom: -8px; }
@@ -49,19 +50,30 @@ a, a:hover, a:active {color: #C00;text-decoration: none; }
 .record sup {display: inline;color: #222; }
 .record .record_office_part {margin-bottom: 8px; }
 .record .record_project_persentage {margin-left: 8px; }
-.record .record_office_description {margin-bottom: 8px; }
 
 .date_box {box-sizing: border-box; }
-.project_box {padding-left: 10%; }
+.project_box {padding-left: 3rem; }
 .record_sample {color: #C00; }
-.workarea {width: 4rem; display: inline-block;}
 .profile {padding: 0 0.75rem;}
 .profile a {padding: 0 0.25rem;}
 
-@media only screen and (max-width: 320px) {
-  #wrapper {padding: 16px; font-size: 0.9rem; }
-  .career .date,
+.career .area {width: 4rem; display: inline-block;}
+.career .date {display: inline-block;width: 152px;vertical-align: top;clear: left;}
+.career .info {word-break: keep-all;}
+
+.portfolio-link {display: block; font-size: 0.875rem;}
+.portfolio-link i {font-size: 0.75rem;}
+
+@media only screen and (max-width: 460px) {
+  #wrapper {padding: 1rem; font-size: 0.9rem; }
+  .career li { border-top: 1px solid #eee; padding-top: 0.75rem; padding-bottom: 0.75rem;}
+  .career li:first-child { border-top: 0; padding-top: 0; }
+  .career li:last-child { padding-bottom: 0;}
+  .career .area,
+  .career .date {display: inline-block;margin-bottom: 8px;}
   .career .box {display: inline-block;width: 100%;margin-bottom: 8px; }
+  .career .info {display: inline-block;width: 100%;margin-bottom: 0;}
+
   .record .box {display: inline-block;width: 100%;padding-left: 0; }
   .record .project_box {padding-left: 0; }
   .record .project_box li {padding-bottom: 8px; } 
