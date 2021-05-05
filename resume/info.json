@@ -173,6 +173,14 @@
             "subproject": null
           },
           {
+            "date":"2020/12 ~ 2021/1",
+            "title": "Meta On Meta",
+            "href": null,
+            "part": "항공권 검색 및 구매 서비스를 위한 모바일 서비스",
+            "persentage": "디자인 90%, 마크업 100%",
+            "subproject": null
+          },
+          {
             "date":"2020/10 ~ 2020/12",
             "title": "KB LiivON 리뉴얼",
             "href": null,
@@ -368,7 +376,7 @@
           },
           {
             "title": "TYO",
-            "part": "그룹 업무관리시스템제작",
+            "part": "그룹 업무 관리 시스템 제작",
             "persentage": "UI디자인 90%, 마크업 80%, PM",
             "subproject": null
           },
