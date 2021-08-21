@@ -109,13 +109,13 @@ document.addEventListener('DOMContentLoaded', function(){
                   for (c in item.record[a].project[b].subproject) {
                     recordArea += '<li class="part_item">'
                     recordArea += item.record[a].project[b].subproject[c].part
-                    recordArea += ' (' + item.record[a].project[b].subproject[c].persentage + ')'
+                    recordArea += ' (' + item.record[a].project[b].subproject[c].percentage + ')'
                     recordArea += '</li>'
                   }
                   recordArea += '</ul>'
                 } else {
                   recordArea += item.record[a].project[b].part
-                  recordArea += ' (' + item.record[a].project[b].persentage + ')'
+                  recordArea += ' (' + item.record[a].project[b].percentage + ')'
                 }
                 recordArea += '</span>'
                 recordArea += item.record[a].project[b].href ? '<a href="https://portfolio.may5.net/' + item.record[a].project[b].href + '" class="portfolio-link">Project description <i class="fa fa-window-restore"></i></a>' : ''
@@ -279,3 +279,29 @@ document.addEventListener('DOMContentLoaded', function(){
     // console.log('fail');
   })
 })
+
+
+window.onload = function() {
+  const mainbox = document.querySelector('main');
+  const scrollP = document.getElementById('personalinfo')
+  const titleC = document.querySelectorAll('.title')
+  const listCount = document.querySelectorAll('.basic')
+  const listCount2 = document.querySelectorAll('.career')
+  const listCount3 = document.querySelectorAll('.record')
+
+  for (i in titleC) {
+    // console.log(titleC[i].innerHTML);
+    console.log(titleC[i].innerText);
+  }
+
+  // console.log(document.querySelectorAll('.title').nextSibling);
+  // console.log(document.querySelectorAll('.title').nextElementSibling);
+
+  // console.log(scrollP.offsetTop);
+  // console.log(mainbox.clientHeight);
+  // console.log(titleC.length);
+  
+  // console.log(listCount.length);
+  // console.log(listCount2.length);
+  // console.log(listCount3.length);
+}
