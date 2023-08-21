@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>minamiland</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<!-- <script src="./themedata.js"></script> -->
+	<script>
+		const theme = [
+			'남자', '여자', '섹시', '고어', '중세',
+			'고래', '상어', '참치', '금붕어', '범고래',
+			'구름', '번개', '비', '돌덩이', '탱크',
+			'전투기', '오징어', '메카닉', '배', '원숭이',
+			'나무', '시계', '책', '선풍기', '연필',
+			'우산', '전화기', '????', '거미', '늑대',
+			'컴퓨터', '자동차', '군인', '킬러', '닌자',
+			'개미', '집', '좀비', '탑', '손',
+			'발', '눈', '귀', '신발', '칼',
+		];
+
+		document.addEventListener('DOMContentLoaded', function(){
+			// Total Word Count
+			const wordCount = document.getElementById('wordCount');
+			wordCount.textContent = theme.length;
+
+			// Theme
+			const themeStyle = document.getElementById('theme');
+			themeStyle.style.fontSize = '1.5rem';
+
+			// Generate Button
+			const generateBtn = document.getElementById('generate');
+			generateBtn.style.textTransform = 'uppercase';
+			generateBtn.style.border = 'none';
+			generateBtn.style.background = '#eee';
+			generateBtn.style.color = '#000';
+			generateBtn.style.padding = '1rem';
+			generateBtn.style.borderRadius = '.625rem';
+			generateBtn.style.width = '100%';
+			generateBtn.addEventListener('click', function() {
+				console.log('xx');
+				generate();
+			})
+
+			// Generate Function
+			function generate() {
+				const themeBox = document.getElementById('theme');
+
+				const data1 = document.getElementById('data1');
+				const data2 = document.getElementById('data2');
+				const data3 = document.getElementById('data3');
+
+				const magicNum = theme.length + 1;
+
+				data1.textContent = theme[Math.round(Math.random() * magicNum)];
+				data2.textContent = theme[Math.round(Math.random() * magicNum)];
+				data3.textContent = theme[Math.round(Math.random() * magicNum)];
+			}
+			generate()
+		})
+	</script>
+</head>
+<body>
+	<!-- document wrap -->
+	<div class="docs_wrap">
+		<h1>RANDOM THEME</h1>
+		<p>total word : <span id="wordCount"></span></p>
+		<button id="generate">generate</button>
+		<div id="theme">
+			<ul>
+				<li id="data1"></li>
+				<li id="data2"></li>
+				<li id="data3"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //document wrap -->
+</body>
+</html>
