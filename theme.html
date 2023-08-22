@@ -47,18 +47,29 @@
 
 			// Generate Function
 			function generate() {
-				const themeBox = document.getElementById('theme');
+				for (let index = 0; index < 3; index++) {
+					const themeBox = document.getElementById('theme');
+					const dom = document.createElement('li');
+					themeBox.append(dom);
+					dom.setAttribute('id','part' + (index + 1));
 
-				const data1 = document.getElementById('data1');
-				const data2 = document.getElementById('data2');
-				const data3 = document.getElementById('data3');
+					for (let itemindex = 0; itemindex < theme.length; itemindex++) {
+						let random = Math.floor(Math.random() * theme.length);
+						dom.innerHTML = '<a href="' + theme[random] + '">' + theme[random] + '</a>'
+					}
+				}
+				//const themeBox = document.getElementById('theme');
 
-				const magicNum = theme.length + 1;
+				//const data1 = document.getElementById('data1');
+				//const data2 = document.getElementById('data2');
+				//const data3 = document.getElementById('data3');
+
+				//const magicNum = theme.length + 1;
 
 				// data1.textContent = theme[Math.round(Math.random() * magicNum)];
-				data1.innerHTML = `<a href="https://www.pinterest.co.kr/search/pins/?q=${theme[Math.round(Math.random() * magicNum)]}rs=typed" target="_blank">${theme[Math.round(Math.random() * magicNum)]}</a>`;
-				data2.textContent = theme[Math.round(Math.random() * magicNum)];
-				data3.textContent = theme[Math.round(Math.random() * magicNum)];
+				//data1.innerHTML = `<a href="https://www.pinterest.co.kr/search/pins/?q=${theme[Math.round(Math.random() * magicNum)]}rs=typed" target="_blank">${theme[Math.round(Math.random() * magicNum)]}</a>`;
+				//data2.textContent = theme[Math.round(Math.random() * magicNum)];
+				//data3.textContent = theme[Math.round(Math.random() * magicNum)];
 			}
 			generate()
 		})
@@ -70,11 +81,11 @@
 		<h1>RANDOM THEME</h1>
 		<p>total word : <span id="wordCount"></span></p>
 		<button id="generate">generate</button>
-		<div id="theme">
-			<ul>
-				<li id="data1"></li>
-				<li id="data2"></li>
-				<li id="data3"></li>
+		<div>
+			<ul id="theme">
+				//<li id="data1"></li>
+				//<li id="data2"></li>
+				//<li id="data3"></li>
 			</ul>
 		</div>
 	</div>
